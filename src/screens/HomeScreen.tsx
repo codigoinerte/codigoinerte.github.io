@@ -1,6 +1,5 @@
 import { FC, useEffect } from 'react'
 import '../assets/styles/home.scss';
-import { Link } from 'react-router-dom';
 import { Header, Social } from '../components';
 
 interface TxtTypeInstance {
@@ -95,6 +94,7 @@ export const HomeScreen: FC = () => {
   return (
     <>
       <Header />
+      {/* Hero section */}
       <div className="container-fluid home">
         <div>
           <h2>Welcome to my page</h2>
