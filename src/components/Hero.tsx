@@ -5,7 +5,7 @@ export const Hero = () => {
         <>
             <div className='hero'></div>
             {/* Hero section */}
-            <div className="container-fluid home">
+            <div id="home" className="container-fluid home">
                 <div>
                 <h2>Welcome to my page</h2>
                 <h1>

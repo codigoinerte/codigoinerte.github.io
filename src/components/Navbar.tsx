@@ -22,19 +22,11 @@ export const Navbar: FC = () => {
               <path d="M 0 0 L 20 0 L 20 20 Q 20 0 0 0 Z" fill="#181f27"/>
             </svg>
             <ul>
-
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Work</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
             </ul>
             <svg className="notch-corner notch-corner--right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
               <path d="M 20 0 L 0 0 L 0 20 Q 0 0 20 0 Z" fill="#181f27"/>
