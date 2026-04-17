@@ -18,7 +18,12 @@ export const Hero = () => {
                 <a href="mailto:fmartinez.bpe@gmail.com">Contact me!</a>
                 </div>
                 <Social />
-            </div> 
+            </div>
+            <a href="#about" className="hero__scroll">
+                <div className="hero__scroll-oval">
+                    <i className="fas fa-chevron-down"></i>
+                </div>
+            </a>
         </>
     )
 }

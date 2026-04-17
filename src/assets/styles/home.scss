@@ -149,6 +149,42 @@ h2,h1{
   animation: blink .6s linear infinite alternate;
 }
 
+.hero__scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.hero__scroll-oval {
+    width: 36px;
+    height: 56px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    animation: scrollBounce 1.8s ease-in-out infinite;
+    transition: border-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        border-color: #fff;
+        color: #fff;
+    }
+}
+
+@keyframes scrollBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
 @media(max-width:1280px)
 {
     .home > div:first-of-type{
