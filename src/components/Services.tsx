@@ -1,8 +1,6 @@
-import React from 'react'
-
 export const Services = () => {
   return (
-    <section className="services">
+    <section id="services" className="services">
       <div className="services__number">02</div>
 
       <div className="services__header">
