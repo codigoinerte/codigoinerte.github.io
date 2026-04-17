@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom'
 import { Navbar } from './Navbar'
 
 export const Header: FC = () => {
@@ -8,6 +7,7 @@ export const Header: FC = () => {
       {/* <div className="logo">
         <Link to="/">Fredy</Link>
       </div> */}
+      <div className='header__separate'></div>
       <Navbar />
     </div>
   )
