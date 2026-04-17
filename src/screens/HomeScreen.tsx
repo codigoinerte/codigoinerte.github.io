@@ -3,6 +3,7 @@ import '../assets/styles/home.scss';
 import { Header } from '../components';
 import { Hero } from '../components/Hero';
 import { Aboutme } from '../components/Aboutme';
+import { Services } from '../components/Services';
 
 interface TxtTypeInstance {
   toRotate: string[];
@@ -104,7 +105,9 @@ export const HomeScreen: FC = () => {
       {/* about me */}
       <Aboutme />
 
+      {/* services */}
+      <Services />
 
-    </>
+</>
   )
 }
