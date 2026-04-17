@@ -1,6 +1,9 @@
 :root{
     --var-spacing: 1.5rem;
 }
+html {
+    scroll-behavior: smooth;
+}
 #root{
     display: flex;
     flex-direction: column;
