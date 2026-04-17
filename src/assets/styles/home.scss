@@ -1,3 +1,6 @@
+:root{
+    --var-spacing: 1.5rem;
+}
 #root{
     display: flex;
     flex-direction: column;
@@ -6,20 +9,34 @@
 }
 body
 {
-    height: 100vh;
-    background: url(../img/bg-2.jpg);
+    background-color: #181f27;
+
+}
+h2,h1{
+    color: #fff;
+}
+.hero{
+    
+    background: url(../img/bg-3.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    height: calc(100dvh - 3rem);
+    
+    top: var(--var-spacing);
+    left: var(--var-spacing);
+    right: var(--var-spacing);
+    bottom: var(--var-spacing);
+
     z-index: -1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    // box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
 }
-body:before{
+.hero:before{
     content: "";
     display: block;
     position: absolute;
@@ -31,12 +48,6 @@ body:before{
     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
     z-index: -1;
 }
-h2,h1{
-    color: #fff;
-}
-.home{
-    flex:1
-}
 .home h2{
     font-size: 1.1rem;
     margin-top: 0px;
@@ -46,7 +57,7 @@ h2,h1{
     letter-spacing: 5px;
 }
 .home h1{
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin-top: 10px;
 }
 .home a{
@@ -63,6 +74,7 @@ h2,h1{
     transition: all 0.45s ease-in-out;
 }
 .home{
+    flex: 1;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -73,7 +85,12 @@ h2,h1{
     display: flex;
     align-items: center;
 
-    padding: 0px 30px;
+    padding-top: 0;
+    padding-left: var(--var-spacing);
+    padding-right: var(--var-spacing);
+    padding-bottom: 0;
+
+    
 }
 .home a:hover{
     background-color: #fff;
@@ -87,6 +104,7 @@ h2,h1{
 .social-media{
     padding: 0px;
     margin: 0px;
+    margin-right: 1.5rem;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -148,6 +166,8 @@ h2,h1{
 {
     .home{
         align-items: self-start;
+        padding-left: calc(1rem + 4rem);
+        padding-right: calc(1rem + 4rem);
     }
     .home > div:first-of-type{
         
@@ -173,6 +193,14 @@ h2,h1{
 
 @media(max-width:480px)
 {
+    .hero{
+        inset: 1rem;
+    }
+    .home{
+        align-items: self-start;
+        padding-left: calc(1rem + 1.5rem);
+        padding-right: calc(1rem + 1.5rem);
+    }
     .home h1{
         font-size: 2.5rem;
         margin: 2rem 0px;

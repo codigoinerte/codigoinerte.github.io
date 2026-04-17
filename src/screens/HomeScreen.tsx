@@ -94,6 +94,7 @@ export const HomeScreen: FC = () => {
   return (
     <>
       <Header />
+      <div className='hero'></div>
       {/* Hero section */}
       <div className="container-fluid home">
         <div>
