@@ -1,8 +1,6 @@
-import React from 'react'
-
 export const Aboutme = () => {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about__number">01</div>
 
       <div className="about__image">
