@@ -2,6 +2,7 @@ import { FC, useEffect } from 'react'
 import '../assets/styles/home.scss';
 import { Header } from '../components';
 import { Hero } from '../components/Hero';
+import { Aboutme } from '../components/Aboutme';
 
 interface TxtTypeInstance {
   toRotate: string[];
@@ -99,6 +100,11 @@ export const HomeScreen: FC = () => {
 
       {/* hero */}
       <Hero />
+
+      {/* about me */}
+      <Aboutme />
+
+
     </>
   )
 }
