@@ -1,0 +1,133 @@
+.skills {
+  width: 100%;
+  padding: 6rem 8rem;
+  background-color: #181f27;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+.skills__number {
+  position: absolute;
+  top: 3rem;
+  right: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #2a3444;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: #e8524a;
+  }
+}
+
+.skills__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skills__label {
+  color: #e8524a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.skills__title {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  line-height: 1.1;
+  position: relative;
+  padding-bottom: 1rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 3px;
+    background-color: #e8524a;
+  }
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.skills__card {
+  border: 1px solid #2a3444;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    border-color: #e8524a;
+    transform: translateY(-4px);
+  }
+}
+
+.skills__icon {
+  font-size: 3rem;
+}
+
+.skills__name {
+  color: #8892a4;
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .skills__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .skills {
+    padding: 4rem 2rem;
+  }
+
+  .skills__number {
+    right: 2rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills__title {
+    font-size: 2rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
