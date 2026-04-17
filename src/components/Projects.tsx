@@ -1,46 +1,16 @@
-const projects = [
-  {
-    number: '01',
-    title: 'E-commerce Platform',
-    description: 'Full-stack e-commerce solution with product catalog, shopping cart and payment integration.',
-    tags: ['React', 'Laravel', 'MySQL'],
-    github: '#',
-    live: '#',
-  },
-  {
-    number: '02',
-    title: 'Real Estate Portal',
-    description: 'Property listing platform with advanced search filters, map integration and contact forms.',
-    tags: ['React', 'PHP', 'REST API'],
-    github: '#',
-    live: '#',
-  },
-  {
-    number: '03',
-    title: 'Corporate Website',
-    description: 'Responsive corporate site with CMS integration, optimized for performance and SEO.',
-    tags: ['Next.js', 'TypeScript', 'SCSS'],
-    github: '#',
-    live: '#',
-  },
-  {
-    number: '04',
-    title: 'Mobile App',
-    description: 'Cross-platform mobile application for iOS and Android with real-time notifications.',
-    tags: ['React Native', 'TypeScript'],
-    github: '#',
-    live: '#',
-  },
-]
+import { useData } from '../context/LanguageContext'
 
 export const Projects = () => {
+  const { data } = useData()
+  const { projects, ui } = data
+
   return (
     <section id="projects" className="projects">
       <div className="projects__number">04</div>
 
       <div className="projects__header">
-        <span className="projects__label">My Work</span>
-        <h2 className="projects__title">Projects</h2>
+        <span className="projects__label">{ui.projects.label}</span>
+        <h2 className="projects__title">{ui.projects.title}</h2>
       </div>
 
       <div className="projects__grid">

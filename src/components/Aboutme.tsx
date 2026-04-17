@@ -1,51 +1,51 @@
+import { useData } from '../context/LanguageContext'
+
 export const Aboutme = () => {
+  const { data } = useData()
+  const { personal, ui } = data
+
   return (
     <section id="about" className="about">
       <div className="about__number">01</div>
 
       <div className="about__image">
-        <img src="./src/assets/img/profile.webp" alt="Fredy Martinez" />
+        <img src="./src/assets/img/profile.webp" alt={personal.name} />
       </div>
 
       <div className="about__content">
-        <span className="about__label">Discover</span>
-        <h2 className="about__title">About Me</h2>
-        <p className="about__description">
-          Frontend Developer with 5+ years of experience in web development, specialized in React
-          and modern technologies like Laravel. Worked on e-commerce projects, real estate portals
-          and corporate solutions, integrating APIs and optimizing performance. Experience with Git,
-          GitHub, Netlify deployments and agile methodologies (Scrum).
-        </p>
+        <span className="about__label">{ui.about.label}</span>
+        <h2 className="about__title">{ui.about.title}</h2>
+        <p className="about__description">{personal.description}</p>
 
         <div className="about__info">
           <div className="about__info-item">
-            <span className="about__info-label">Name:</span>
-            <span>Fredy Martinez</span>
+            <span className="about__info-label">{ui.about.fields.name}:</span>
+            <span>{personal.name}</span>
           </div>
           <div className="about__info-item">
-            <span className="about__info-label">Location:</span>
-            <span>Lima, Peru</span>
+            <span className="about__info-label">{ui.about.fields.location}:</span>
+            <span>{personal.location}</span>
           </div>
           <div className="about__info-item">
-            <span className="about__info-label">Experience:</span>
-            <span>5+ Years</span>
+            <span className="about__info-label">{ui.about.fields.experience}:</span>
+            <span>{personal.experience}</span>
           </div>
           <div className="about__info-item">
-            <span className="about__info-label">Freelance:</span>
-            <span>Available</span>
+            <span className="about__info-label">{ui.about.fields.freelance}:</span>
+            <span>{personal.freelance}</span>
           </div>
           <div className="about__info-item">
-            <span className="about__info-label">Email:</span>
-            <span>fmartinez.bpe@gmail.com</span>
+            <span className="about__info-label">{ui.about.fields.email}:</span>
+            <span>{personal.email}</span>
           </div>
           <div className="about__info-item">
-            <span className="about__info-label">Phone:</span>
-            <span>(+51) 930299310</span>
+            <span className="about__info-label">{ui.about.fields.phone}:</span>
+            <span>{personal.phone}</span>
           </div>
         </div>
 
-        <a href="./src/assets/cv/fredy-martinez-cv.pdf" target="_blank" rel="noopener noreferrer" className="about__btn">
-          Download CV
+        <a href={personal.cvUrl} target="_blank" rel="noopener noreferrer" className="about__btn">
+          {ui.about.downloadCV}
         </a>
       </div>
     </section>

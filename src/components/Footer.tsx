@@ -1,24 +1,28 @@
+import { useData } from '../context/LanguageContext'
+
 export const Footer = () => {
+  const { data } = useData()
+  const { personal, social, ui } = data
+
   return (
     <footer className="footer">
       <div className="footer__cta">
-        <span>Available for freelance work</span>
-        <a href="mailto:fmartinez.bpe@gmail.com" className="footer__email">
-          fmartinez.bpe@gmail.com
+        <span>{ui.footer.freelance}</span>
+        <a href={`mailto:${personal.email}`} className="footer__email">
+          {personal.email}
         </a>
       </div>
 
       <div className="footer__social">
-        <a href="https://github.com/codigoinerte" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <i className="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/fredy-martinez-bustamante" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <i className="fab fa-linkedin-in"></i>
-        </a>
+        {social.map(({ label, url, icon }) => (
+          <a key={label} href={url} target="_blank" rel="noopener noreferrer" aria-label={label}>
+            <i className={icon}></i>
+          </a>
+        ))}
       </div>
 
       <p className="footer__copy">
-        © {new Date().getFullYear()} Fredy Martinez. All rights reserved.
+        © {new Date().getFullYear()} {personal.name}. All rights reserved.
       </p>
     </footer>
   )

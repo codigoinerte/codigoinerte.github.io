@@ -1,0 +1,126 @@
+{
+  "personal": {
+    "name": "Fredy Martinez",
+    "role": "Frontend Developer",
+    "location": "Lima, Peru",
+    "email": "fmartinez.bpe@gmail.com",
+    "phone": "(+51) 930299310",
+    "experience": "5+ Years",
+    "freelance": "Available",
+    "description": "Frontend Developer with 5+ years of experience in web development, specialized in React and modern technologies like Laravel. Worked on e-commerce projects, real estate portals and corporate solutions, integrating APIs and optimizing performance. Experience with Git, GitHub, Netlify deployments and agile methodologies (Scrum).",
+    "cvUrl": "./src/assets/cv/fredy-martinez-cv.pdf"
+  },
+  "social": [
+    { "label": "Twitter", "url": "https://twitter.com/codigoinerte", "icon": "fa-brands fa-twitter" },
+    { "label": "GitHub", "url": "https://github.com/codigoinerte", "icon": "fa-brands fa-github" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/fredy-martinez-bustamante/", "icon": "fa-brands fa-linkedin-in" }
+  ],
+  "skills": [
+    { "icon": "devicon-html5-plain", "label": "HTML5", "color": "#e34f26" },
+    { "icon": "devicon-css3-plain", "label": "CSS3", "color": "#1572b6" },
+    { "icon": "devicon-javascript-plain", "label": "JavaScript", "color": "#f7df1e" },
+    { "icon": "devicon-typescript-plain", "label": "TypeScript", "color": "#3178c6" },
+    { "icon": "devicon-react-original", "label": "React", "color": "#61dafb" },
+    { "icon": "devicon-nextjs-plain", "label": "Next.js", "color": "#fff" },
+    { "icon": "devicon-php-plain", "label": "PHP", "color": "#777bb4" },
+    { "icon": "devicon-laravel-plain", "label": "Laravel", "color": "#ff2d20" },
+    { "icon": "devicon-nodejs-plain", "label": "Node.js", "color": "#339933" },
+    { "icon": "devicon-sass-original", "label": "Sass", "color": "#cc6699" },
+    { "icon": "devicon-git-plain", "label": "Git", "color": "#f05032" },
+    { "icon": "devicon-github-original", "label": "GitHub", "color": "#fff" }
+  ],
+  "services": [
+    {
+      "icon": "fas fa-code",
+      "title": "Frontend Development",
+      "description": "Building modern, responsive user interfaces with React, TypeScript and Next.js. Focus on performance, accessibility and clean component architecture."
+    },
+    {
+      "icon": "fas fa-globe",
+      "title": "Web Applications",
+      "description": "Full-stack web solutions using PHP and Laravel on the backend, integrated with REST APIs, e-commerce platforms and corporate portals."
+    },
+    {
+      "icon": "fas fa-mobile-alt",
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile applications built with React Native, delivering native experiences for both iOS and Android from a single codebase."
+    }
+  ],
+  "projects": [
+    {
+      "number": "01",
+      "title": "E-commerce Platform",
+      "description": "Full-stack e-commerce solution with product catalog, shopping cart and payment integration.",
+      "tags": ["React", "Laravel", "MySQL"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "number": "02",
+      "title": "Real Estate Portal",
+      "description": "Property listing platform with advanced search filters, map integration and contact forms.",
+      "tags": ["React", "PHP", "REST API"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "number": "03",
+      "title": "Corporate Website",
+      "description": "Responsive corporate site with CMS integration, optimized for performance and SEO.",
+      "tags": ["Next.js", "TypeScript", "SCSS"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "number": "04",
+      "title": "Mobile App",
+      "description": "Cross-platform mobile application for iOS and Android with real-time notifications.",
+      "tags": ["React Native", "TypeScript"],
+      "github": "#",
+      "live": "#"
+    }
+  ],
+  "ui": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "skills": "Skills",
+      "projects": "Projects"
+    },
+    "hero": {
+      "greeting": "Welcome to my page",
+      "headline": "Hi,\nI'm Fredy,",
+      "roles": ["PHP Developer", "React Developer", "React Native Developer"],
+      "cta": "Contact me!"
+    },
+    "about": {
+      "label": "Discover",
+      "title": "About Me",
+      "fields": {
+        "name": "Name",
+        "location": "Location",
+        "experience": "Experience",
+        "freelance": "Freelance",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "downloadCV": "Download CV"
+    },
+    "services": {
+      "label": "What I Do",
+      "title": "My Services"
+    },
+    "skills": {
+      "label": "What I Know",
+      "title": "My Skills"
+    },
+    "projects": {
+      "label": "My Work",
+      "title": "Projects"
+    },
+    "footer": {
+      "freelance": "Available for freelance work"
+    }
+  }
+}
