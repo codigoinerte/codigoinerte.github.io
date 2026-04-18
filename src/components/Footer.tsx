@@ -7,7 +7,6 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__cta">
-        <span>{ui.footer.freelance}</span>
         <a href={`mailto:${personal.email}`} className="footer__email">
           {personal.email}
         </a>
