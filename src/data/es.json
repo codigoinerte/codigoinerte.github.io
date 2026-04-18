@@ -8,7 +8,7 @@
     "experience": "5+ Años",
     "freelance": "Disponible",
     "description": "Desarrollador Frontend con más de 5 años de experiencia en desarrollo web, especializado en React y tecnologías modernas como Laravel. Trabajé en proyectos de e-commerce, portales inmobiliarios y soluciones corporativas, integrando APIs y optimizando rendimiento. Experiencia con Git, GitHub, despliegues en Netlify y metodologías ágiles (Scrum).",
-    "cvUrl": "./src/assets/cv/fredy-martinez-cv.pdf"
+    "cvUrl": "/cv/CV-Fredy-Jhoel-Martinez-Bustamante.pdf"
   },
   "social": [
     { "label": "Twitter", "url": "https://twitter.com/codigoinerte", "icon": "fa-brands fa-twitter" },
