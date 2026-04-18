@@ -9,7 +9,7 @@ export const Aboutme = () => {
       <div className="about__number">01</div>
 
       <div className="about__image">
-        <img src="./src/assets/img/profile.webp" alt={personal.name} />
+        <img src={`/public/profile.webp`} alt={personal.name} />
       </div>
 
       <div className="about__content">
