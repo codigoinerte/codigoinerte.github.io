@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://codigoinerte.github.io
+Sitemap: https://codigoinerte.github.io/sitemap.xml

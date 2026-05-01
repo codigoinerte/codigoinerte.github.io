@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[246],{6314:(e,n,s)=>{Promise.resolve().then(s.bind(s,7137))},7137:(e,n,s)=>{"use strict";s.r(n),s.d(n,{default:()=>t});var r=s(2115);function t(){return(0,r.useEffect)(()=>{window.location.replace("/#projects")},[]),null}}},e=>{e.O(0,[441,255,358],()=>e(e.s=6314)),_N_E=e.O()}]);
