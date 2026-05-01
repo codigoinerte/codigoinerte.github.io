@@ -7,7 +7,7 @@
     "phone": "(+51) 930299310",
     "experience": "5+ Years",
     "freelance": "Available",
-    "description": "Frontend Developer with 5+ years of experience in web development, specialized in React and modern technologies like Laravel. Worked on e-commerce projects, real estate portals and corporate solutions, integrating APIs and optimizing performance. Experience with Git, GitHub, Netlify deployments and agile methodologies (Scrum).",
+    "description": "Frontend Developer with 5+ years of experience specializing in React, Next.js and TypeScript. Built e-commerce platforms, real estate portals and corporate web applications with REST API integration and performance optimization. Available for freelance projects.",
     "cvUrl": "/cv/CV-Fredy-Jhoel-Martinez-Bustamante.pdf"
   },
   "social": [
@@ -16,29 +16,30 @@
     { "label": "LinkedIn", "url": "https://www.linkedin.com/in/fredy-martinez-bustamante/", "icon": "fa-brands fa-linkedin-in" }
   ],
   "skills": [
-    { "icon": "devicon-html5-plain", "label": "HTML5", "color": "#e34f26" },
-    { "icon": "devicon-css3-plain", "label": "CSS3", "color": "#1572b6" },
-    { "icon": "devicon-javascript-plain", "label": "JavaScript", "color": "#f7df1e" },
-    { "icon": "devicon-typescript-plain", "label": "TypeScript", "color": "#3178c6" },
     { "icon": "devicon-react-original", "label": "React", "color": "#61dafb" },
     { "icon": "devicon-nextjs-plain", "label": "Next.js", "color": "#fff" },
-    { "icon": "devicon-php-plain", "label": "PHP", "color": "#777bb4" },
-    { "icon": "devicon-laravel-plain", "label": "Laravel", "color": "#ff2d20" },
+    { "icon": "devicon-typescript-plain", "label": "TypeScript", "color": "#3178c6" },
+    { "icon": "devicon-javascript-plain", "label": "JavaScript", "color": "#f7df1e" },
     { "icon": "devicon-nodejs-plain", "label": "Node.js", "color": "#339933" },
+    { "icon": "devicon-tailwindcss-original", "label": "Tailwind CSS", "color": "#38bdf8" },
     { "icon": "devicon-sass-original", "label": "Sass", "color": "#cc6699" },
     { "icon": "devicon-git-plain", "label": "Git", "color": "#f05032" },
-    { "icon": "devicon-github-original", "label": "GitHub", "color": "#fff" }
+    { "icon": "devicon-github-original", "label": "GitHub", "color": "#fff" },
+    { "icon": "devicon-php-plain", "label": "PHP", "color": "#777bb4" },
+    { "icon": "devicon-laravel-plain", "label": "Laravel", "color": "#ff2d20" },
+    { "icon": "devicon-html5-plain", "label": "HTML5", "color": "#e34f26" },
+    { "icon": "devicon-css3-plain", "label": "CSS3", "color": "#1572b6" }
   ],
   "services": [
     {
       "icon": "fas fa-code",
       "title": "Frontend Development",
-      "description": "Building modern, responsive user interfaces with React, TypeScript and Next.js. Focus on performance, accessibility and clean component architecture."
+      "description": "Building modern, responsive user interfaces with React, Next.js and TypeScript. Focus on performance, accessibility and clean component architecture."
     },
     {
       "icon": "fas fa-globe",
       "title": "Web Applications",
-      "description": "Full-stack web solutions using PHP and Laravel on the backend, integrated with REST APIs, e-commerce platforms and corporate portals."
+      "description": "Full-stack web solutions with React on the frontend and Node.js or PHP/Laravel on the backend, integrated with REST APIs, e-commerce platforms and corporate portals."
     },
     {
       "icon": "fas fa-mobile-alt",
@@ -49,6 +50,14 @@
   "projects": [
     {
       "number": "01",
+      "title": "SATTRACK",
+      "description": "Real-time satellite monitoring dashboard with 3D Earth visualization, SGP4 orbital propagation via Web Workers and live data from CelesTrak and NASA. Includes Starlink constellation, solar events and orbital metrics by type (LEO, MEO, GEO).",
+      "tags": ["React", "TypeScript", "Three.js", "React Three Fiber", "Web Workers", "satellite.js"],
+      "github": "https://github.com/codigoinerte/satellite",
+      "live": "https://codigoinerte.github.io/satellite/"
+    },
+    {
+      "number": "02",
       "title": "AboutLink Me",
       "description": "A 'link in bio' platform with an admin panel to manage profile, links, projects and customizable design.",
       "tags": ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui"],
@@ -56,7 +65,7 @@
       "live": "https://aboutme.tester.org.pe/"
     },
     {
-      "number": "02",
+      "number": "03",
       "title": "Incidencias Bomberos",
       "description": "Web app to search and visualize firefighter incidents in real time, with Python/Flask scraping backend and React frontend.",
       "tags": ["React", "Python", "Flask", "Redis", "REST API"],
@@ -64,7 +73,7 @@
       "live": "https://incidenciasbomberos.netlify.app/"
     },
     {
-      "number": "03",
+      "number": "04",
       "title": "DevsTagram",
       "description": "Personal social network with user registration, photo publishing, comments and likes.",
       "tags": ["Laravel", "PHP", "MySQL", "Tailwind", "JavaScript"],
@@ -72,23 +81,7 @@
       "live": "https://devstagram.tester.org.pe/"
     },
     {
-      "number": "04",
-      "title": "CurrencyConvert",
-      "description": "Currency conversion app that lets users enter amounts and select source and target currencies to get the final conversion value.",
-      "tags": ["React", "JavaScript", "CSS"],
-      "github": "https://github.com/codigoinerte/currencyconvert",
-      "live": "https://codigoinerte.github.io/currencyconvert/"
-    },
-    {
       "number": "05",
-      "title": "JournalApp",
-      "description": "Online journal to log daily activities with comments and images, with Firebase authentication.",
-      "tags": ["React", "Firebase", "MUI", "JavaScript"],
-      "github": "https://github.com/codigoinerte/journal-app",
-      "live": "https://codigoinerte.github.io/journal-app"
-    },
-    {
-      "number": "06",
       "title": "Computek E.I.R.L",
       "description": "Tech store website that increased sales by 40% in the first 4 months and boosted online visibility through SEO.",
       "tags": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
@@ -96,12 +89,20 @@
       "live": "https://computek.tester.org.pe/"
     },
     {
+      "number": "06",
+      "title": "CurrencyConvert",
+      "description": "Currency conversion app that lets users enter amounts and select source and target currencies to get the final conversion value.",
+      "tags": ["React", "JavaScript", "CSS"],
+      "github": "https://github.com/codigoinerte/currencyconvert",
+      "live": "https://codigoinerte.github.io/currencyconvert/"
+    },
+    {
       "number": "07",
-      "title": "SATTRACK",
-      "description": "Real-time satellite monitoring dashboard with 3D Earth visualization, SGP4 orbital propagation via Web Workers and live data from CelesTrak and NASA. Includes Starlink constellation, solar events and orbital metrics by type (LEO, MEO, GEO).",
-      "tags": ["React", "TypeScript", "Three.js", "React Three Fiber", "Web Workers", "satellite.js"],
-      "github": "https://github.com/codigoinerte/satellite",
-      "live": "https://codigoinerte.github.io/satellite/"
+      "title": "JournalApp",
+      "description": "Online journal to log daily activities with comments and images, with Firebase authentication.",
+      "tags": ["React", "Firebase", "MUI", "JavaScript"],
+      "github": "https://github.com/codigoinerte/journal-app",
+      "live": "https://codigoinerte.github.io/journal-app"
     }
   ],
   "ui": {
@@ -115,7 +116,7 @@
     "hero": {
       "greeting": "Welcome to my page",
       "headline": "Hi,\nI'm Fredy,",
-      "roles": ["PHP Developer", "React Developer", "React Native Developer"],
+      "roles": ["Frontend Developer", "React Developer", "Next.js Developer"],
       "cta": "Contact me!"
     },
     "about": {

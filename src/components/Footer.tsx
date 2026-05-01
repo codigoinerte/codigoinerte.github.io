@@ -1,3 +1,5 @@
+'use client'
+
 import { useData } from '../context/LanguageContext'
 
 export const Footer = () => {

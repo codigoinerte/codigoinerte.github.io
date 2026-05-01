@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, useState } from 'react'
 import { Social } from './Social'
 import { useData } from '../context/LanguageContext'

@@ -1,4 +1,6 @@
-import { createContext, useContext, useState, ReactNode } from 'react'
+'use client'
+
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import en from '../data/en.json'
 import es from '../data/es.json'
 
@@ -9,14 +11,23 @@ interface LanguageContextType {
   lang: Lang
   data: Data
   toggleLang: () => void
+  mounted: boolean
 }
 
 const LanguageContext = createContext<LanguageContextType | null>(null)
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<Lang>(() => {
-    return (localStorage.getItem('lang') as Lang) ?? 'en'
-  })
+  // Inicializar con 'en', nunca leer localStorage aquí (SSG corre en Node.js sin localStorage)
+  const [lang, setLang] = useState<Lang>('en')
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    const saved = localStorage.getItem('lang') as Lang | null
+    if (saved === 'en' || saved === 'es') {
+      setLang(saved)
+    }
+    setMounted(true)
+  }, [])
 
   const data = lang === 'en' ? en : es
 
@@ -27,7 +38,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   }
 
   return (
-    <LanguageContext.Provider value={{ lang, data, toggleLang }}>
+    <LanguageContext.Provider value={{ lang, data, toggleLang, mounted }}>
       {children}
     </LanguageContext.Provider>
   )

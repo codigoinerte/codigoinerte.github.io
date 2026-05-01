@@ -1,3 +1,6 @@
+'use client'
+
+import Image from 'next/image'
 import { useData } from '../context/LanguageContext'
 
 export const Aboutme = () => {
@@ -9,7 +12,15 @@ export const Aboutme = () => {
       <div className="about__number">01</div>
 
       <div className="about__image">
-        <img src="/profile.webp" alt={personal.name} />
+        <Image
+          src="/profile.webp"
+          alt={`${personal.name} - ${personal.role}`}
+          width={380}
+          height={570}
+          priority
+          unoptimized
+          className="about__profile-img"
+        />
       </div>
 
       <div className="about__content">

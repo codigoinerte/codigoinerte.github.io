@@ -20,7 +20,7 @@ h2,h1{
 }
 .hero{
     
-    background: url(../img/bg-3.png);
+    background: url('/img/bg-3.webp');
     // background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,6 +131,10 @@ h2,h1{
     display: block;
     padding: 10px;
     border-radius: 100%;
+}
+
+.typewrite > .wrap {
+  border-right: 0.08em solid #fff;
 }
 
 .input-cursor {

@@ -1,1 +1,1 @@
-export * from './styles/global.scss'
+// Styles are imported in app/layout.tsx
